@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+    <!-- <link rel="stylesheet" href="../static/style.css"> -->
 </head>
 <body>
     {% for book in books %}
     <div class="book">
       <h2>{{book.title}}</h2>
-      <h3>{{book.author}}</h2>
+      <h3>{{book.author}}</h3>
     </div>
     {% endfor %}
+    <form action="/books/write" method="get">
+      <button type="submit">Write your review!</button>
+  </form>
 </body>
 </html>

@@ -8,8 +8,13 @@
     <!-- <link rel="stylesheet" href="../static/style.css"> -->
 </head>
 <body>
-    <form action="/books" method="get">
-        <button type="submit">Check all the reviews!</button>
-    </form>
+    <div>
+      <h1>{{book.title}}</h1>
+      <h2>{{book.author}}</h2>
+      <p>{{book.review}}</p>
+      <p>{{book.reviewDate}}</p>
+    </div>
+    <button>Edit Review</button>
+    <button>Delete Review</button>
 </body>
 </html>
