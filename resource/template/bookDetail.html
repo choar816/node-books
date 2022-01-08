@@ -13,8 +13,13 @@
       <p>{{book.author}}</p>
       <p>"{{book.review}}"</p>
       <p>{{book.reviewDate}}</p>
-      <button>Edit Review</button>
-      <button>Delete Review</button>
+      <!-- <button>Edit Review</button> -->
+      <form action="edit/{{book.id}}" method="get">
+        <button>Edit Review</button>
+      </form>
+      <form action="{{book.id}}" method="post">
+        <button>Delete Review</button>
+      </form>
     </section class="container">
 </body>
 </html>
