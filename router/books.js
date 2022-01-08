@@ -28,7 +28,6 @@ router.post('/', (req, res, next) => {
 
   const book = { id, title, author, star, review, reviewDate };
   books.push(book);
-  // res.status(201).json(books);
   res.redirect('/books');
 });
 
